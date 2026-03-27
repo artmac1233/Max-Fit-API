@@ -37,15 +37,17 @@ O objetivo do projeto é praticar o desenvolvimento de APIs REST, modelagem de b
 git clone https://github.com/artmac1233/Max-Fit-API.git
 cd Max-Fit-API
 
-### **2. Criar ambiente virtual (opcional, mas recomendado)**
+### 2. Criar ambiente virtual (opcional, mas recomendado)
+# 2.1. Criar ambiente virtual
 python -m venv venv
+
+# 2.2. Ativar o ambiente
 venv\Scripts\activate
 
-### **3. Instalar dependências**
+### 3. Instalar dependências
 pip install -r requirements.txt
 
-### **4. Configurar variáveis de ambiente**
-
+### 4. Configurar variáveis de ambiente
 Crie um arquivo .env na raiz do projeto com suas credenciais do banco de dados:
 
 DB_HOST=localhost
@@ -53,7 +55,16 @@ DB_USER=seu_usuario
 DB_PASSWORD=sua_senha
 DB_NAME=maxfit
 
-5. Executar a aplicação
+### 6. Importar o banco de dados
+Abra o MySQL no terminal ou no Workbench e execute:
+CREATE DATABASE maxfit;
+
+Execute o seguinte comando no terminal, dentro da pasta do projeto:
+mysql -u root -p maxfit < database/schema.sql
+
+O projeto já contém o arquivo schema.sql com toda a estrutura do banco na pasta Database
+
+### 5. Executar a aplicação
 python app.py
 
 A API estará disponível em: http://127.0.0.1:5000
