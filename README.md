@@ -2,7 +2,7 @@
 
 A API MaxFit é uma aplicação REST desenvolvida em Python com Flask, voltada para o gerenciamento de produtos de uma loja de suplementos fictícia.
 
-O projeto permite realizar operações básicas de CRUD em produtos, incluindo cadastro e listagem, com integração a banco de dados MySQL.
+O projeto permite realizar operações básicas de CRUD em produtos, com integração a banco de dados MySQL, cujo modelo e estrutura foram desenvolvidos por mim, incluindo definição de tabelas, relacionamentos e constraints.
 
 ### ⚙️ Funcionalidades
 - Listagem de produtos (GET /produtos)
@@ -21,9 +21,9 @@ O projeto permite realizar operações básicas de CRUD em produtos, incluindo c
 - Postman
 
 ### 🎯 Objetivo
-O objetivo do projeto é praticar o desenvolvimento de APIs REST, integração com banco de dados e conceitos de testes de API, visando consolidar conhecimentos em backend e QA.
+O objetivo do projeto é praticar o desenvolvimento de APIs REST, modelagem de banco de dados e testes de API, consolidando conhecimentos em backend e QA.
 
 ### 🚀 Próximos passos
-- Implementar rotas de atualização (PUT) e exclusão (DELETE)
+- Implementar rotas de atualização (PUT), exclusão (DELETE) para produtos e finalizar todas as rotas para categoria.
 - Adicionar filtros e paginação
 - Realizar deploy da aplicação
