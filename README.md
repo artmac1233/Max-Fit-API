@@ -37,14 +37,14 @@ O objetivo do projeto é praticar o desenvolvimento de APIs REST, modelagem de b
 git clone https://github.com/artmac1233/Max-Fit-API.git
 cd Max-Fit-API
 
-**### 2. Criar ambiente virtual (opcional, mas recomendado)**
+### **2. Criar ambiente virtual (opcional, mas recomendado)**
 python -m venv venv
 venv\Scripts\activate
 
-**### 3. Instalar dependências**
+### **3. Instalar dependências**
 pip install -r requirements.txt
 
-**### 4. Configurar variáveis de ambiente**
+### **4. Configurar variáveis de ambiente**
 
 Crie um arquivo .env na raiz do projeto com suas credenciais do banco de dados:
 
