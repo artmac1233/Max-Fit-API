@@ -27,3 +27,33 @@ O objetivo do projeto é praticar o desenvolvimento de APIs REST, modelagem de b
 - Implementar rotas de atualização (PUT), exclusão (DELETE) para produtos e finalizar todas as rotas para categoria.
 - Adicionar filtros e paginação
 - Realizar deploy da aplicação
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## ▶️ Como executar o projeto
+
+### 1. Clonar o repositório
+```bash
+git clone https://github.com/artmac1233/Max-Fit-API.git
+cd Max-Fit-API
+
+**### 2. Criar ambiente virtual (opcional, mas recomendado)**
+python -m venv venv
+venv\Scripts\activate
+
+**### 3. Instalar dependências**
+pip install -r requirements.txt
+
+**### 4. Configurar variáveis de ambiente**
+
+Crie um arquivo .env na raiz do projeto com suas credenciais do banco de dados:
+
+DB_HOST=localhost
+DB_USER=seu_usuario
+DB_PASSWORD=sua_senha
+DB_NAME=maxfit
+
+5. Executar a aplicação
+python app.py
+
+A API estará disponível em: http://127.0.0.1:5000
