@@ -109,7 +109,6 @@ def criar_produto():
             novo_id = cursor.lastrowid
             con.commit()
 
-
             cursor.execute('''
                 SELECT id, nome, marca, estoque, categoria_id, preco
                 FROM produtos WHERE id = %s
@@ -177,7 +176,6 @@ def atualizar_produto(id):
             ))
             con.commit()
 
-
             cursor.execute('''
                 SELECT id, nome, marca, estoque, categoria_id, preco
                 FROM produtos WHERE id = %s
@@ -197,7 +195,7 @@ def atualizar_produto(id):
 # ---------------------------------------------------------------------------
 
 @produtos_bp.route('/produtos/<int:id>', methods=['DELETE'])
-def deletar_produto(id):
+def excluir_produto(id):
     try:
         with get_cursor(dictionary=True) as (cursor, con):
             cursor.execute('SELECT id, nome FROM produtos WHERE id = %s', (id,))
@@ -209,7 +207,7 @@ def deletar_produto(id):
             
             con.commit()
 
-        return jsonify({'mensagem': f"Produto '{produto['nome']}' deletado com sucesso!"}), 200
+        return jsonify({'mensagem': f"Produto '{produto['nome']}' excluido com sucesso!"}), 200
 
     except ConnectionError as e:
         return jsonify({'error': str(e)}), 500
